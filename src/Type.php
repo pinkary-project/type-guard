@@ -34,4 +34,16 @@ final readonly class Type
 
         return $this->variable;
     }
+
+    /**
+     * Asserts and narrow down the type to integer.
+     */
+    public function isInt(): int
+    {
+        if (! is_int($this->variable)) {
+            throw new TypeError('Variable is not an integer.');
+        }
+
+        return $this->variable;
+    }
 }
