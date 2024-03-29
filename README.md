@@ -10,6 +10,8 @@
 
 ------
 
+> This library is a **work in progress**. Please, do not use it in production.
+
 Type Guard is a lightweight PHP library that allows you to narrow down the type of an variable to a more specific type. It provides a `type` function to assert and tell the compiler, [PHPStan](https://phpstan.org/), and [Psalm](https://psalm.dev/) the type of a variable. Here is an example:
 
 ```php
@@ -42,6 +44,6 @@ Asserts that the given variable is a string.
 type($variable)->isString();
 ```
 
----
+------
 
 **Type Guard** was created by **[Nuno Maduro](https://twitter.com/enunomaduro)** under the **[MIT license](https://opensource.org/licenses/MIT)**.
