@@ -41,15 +41,15 @@ composer require std-library/type-guard
 
 ### `asInt()`
 
-Asserts that the given variable is an integer.
+Asserts and narrows down the type of the given variable to an integer.
 
 ```php
 $variable = type($variable)->asInt();
 ```
 
-### `asString()
+### `asString()`
 
-Asserts that the given variable is a string.
+Asserts and narrows down the type of the given variable to an string.
 
 ```php
 $variable = type($variable)->asString();
