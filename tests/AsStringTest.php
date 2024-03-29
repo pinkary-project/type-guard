@@ -3,7 +3,7 @@
 test('string type', function () {
     $variable = 'string';
 
-    $value = type($variable)->isString();
+    $value = type($variable)->asString();
 
     expect($value)->toBeString();
 });
@@ -11,5 +11,5 @@ test('string type', function () {
 test('not string type', function () {
     $variable = 1;
 
-    $value = type($variable)->isString();
+    $value = type($variable)->asString();
 })->throws(TypeError::class, 'Variable is not a string.');

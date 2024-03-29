@@ -21,7 +21,7 @@ function config(): mixed;
 $apiKey = config('api_key'); 
 
 // Asserts and narrow down the type of $apiKey to string:
-type($apiKey)->isString(); 
+$apiKey = type($apiKey)->asString(); 
 ```
 
 ## Installation
@@ -36,12 +36,23 @@ composer require std-library/type-guard
 
 ## Usage
 
-### `isString()
+- [`asInt()`](#asint)
+- [`asString()`](#asstring)
+
+### `asInt()`
+
+Asserts that the given variable is an integer.
+
+```php
+$variable = type($variable)->asInt();
+```
+
+### `asString()
 
 Asserts that the given variable is a string.
 
 ```php
-type($variable)->isString();
+$variable = type($variable)->asString();
 ```
 
 ------

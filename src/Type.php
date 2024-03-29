@@ -26,7 +26,7 @@ final readonly class Type
     /**
      * Asserts and narrow down the type to string.
      */
-    public function isString(): string
+    public function asString(): string
     {
         if (! is_string($this->variable)) {
             throw new TypeError('Variable is not a string.');
@@ -38,7 +38,7 @@ final readonly class Type
     /**
      * Asserts and narrow down the type to integer.
      */
-    public function isInt(): int
+    public function asInt(): int
     {
         if (! is_int($this->variable)) {
             throw new TypeError('Variable is not an integer.');
