@@ -1,10 +1,10 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/nunomaduro/skeleton-php/master/docs/example.jpg" height="300" alt="Skeleton Php">
+    <img src="https://raw.githubusercontent.com/std-library/type-guard/master/docs/example.jpg" height="300" alt="Skeleton Php">
     <p align="center">
-        <a href="https://github.com/nunomaduro/skeleton-php/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/nunomaduro/skeleton-php/actions/workflows/tests.yml/badge.svg"></a>
-        <a href="https://packagist.org/packages/nunomaduro/skeleton-php"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/nunomaduro/skeleton-php"></a>
-        <a href="https://packagist.org/packages/nunomaduro/skeleton-php"><img alt="Latest Version" src="https://img.shields.io/packagist/v/nunomaduro/skeleton-php"></a>
-        <a href="https://packagist.org/packages/nunomaduro/skeleton-php"><img alt="License" src="https://img.shields.io/packagist/l/nunomaduro/skeleton-php"></a>
+        <a href="https://github.com/std-library/type-guard/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/std-library/type-guard/actions/workflows/tests.yml/badge.svg"></a>
+        <a href="https://packagist.org/packages/std-library/type-guard"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/std-library/type-guard"></a>
+        <a href="https://packagist.org/packages/std-library/type-guard"><img alt="Latest Version" src="https://img.shields.io/packagist/v/std-library/type-guard"></a>
+        <a href="https://packagist.org/packages/std-library/type-guard"><img alt="License" src="https://img.shields.io/packagist/l/std-library/type-guard"></a>
     </p>
 </p>
 
@@ -15,9 +15,11 @@ Type Guard is a lightweight PHP library that allows you to narrow down the type 
 ```php
 function config(): mixed;
 
-$apiKey = config('api_key'); // $apiKey is mixed
+// For PHPStan and Psalm, the return type of config is mixed:
+$apiKey = config('api_key'); 
 
-type($apiKey)->isString(); // PHPStan and Psalm will know that $apiKey is a string
+// Asserts and narrow down the type of $apiKey to string:
+type($apiKey)->isString(); 
 ```
 
 ## Installation
