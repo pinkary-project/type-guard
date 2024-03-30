@@ -14,4 +14,4 @@ test('not string type', function (): void {
     $variable = 1;
 
     type($variable)->asString();
-})->throws(TypeError::class, 'Variable is not a string.');
+})->throws(TypeError::class, 'Variable is not a [string].');

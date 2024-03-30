@@ -14,4 +14,4 @@ test('not boolean type', function (): void {
     $variable = 7415541;
 
     type($variable)->asBool();
-})->throws(TypeError::class, 'Variable is not a boolean.');
+})->throws(TypeError::class, 'Variable is not a [boolean].');

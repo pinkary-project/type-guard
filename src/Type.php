@@ -36,7 +36,7 @@ final readonly class Type
     public function as(string $type): mixed
     {
         if (! is_object($this->variable) || ! $this->variable instanceof $type) {
-            throw new TypeError('Variable is not a '.$type.'.');
+            throw new TypeError('Variable is not a ['.$type.'].');
         }
 
         return $this->variable;
@@ -50,7 +50,7 @@ final readonly class Type
     public function asString(): string
     {
         if (! is_string($this->variable)) {
-            throw new TypeError('Variable is not a string.');
+            throw new TypeError('Variable is not a [string].');
         }
 
         return $this->variable;
@@ -64,7 +64,7 @@ final readonly class Type
     public function asInt(): int
     {
         if (! is_int($this->variable)) {
-            throw new TypeError('Variable is not an integer.');
+            throw new TypeError('Variable is not an [integer].');
         }
 
         return $this->variable;
@@ -78,7 +78,7 @@ final readonly class Type
     public function asFloat(): float
     {
         if (! is_float($this->variable)) {
-            throw new TypeError('Variable is not a float.');
+            throw new TypeError('Variable is not a [float].');
         }
 
         return $this->variable;
@@ -92,7 +92,7 @@ final readonly class Type
     public function asBool(): bool
     {
         if (! is_bool($this->variable)) {
-            throw new TypeError('Variable is not a boolean.');
+            throw new TypeError('Variable is not a [boolean].');
         }
 
         return $this->variable;

@@ -14,4 +14,4 @@ test('not float type', function (): void {
     $variable = 7415541;
 
     type($variable)->asFloat();
-})->throws(TypeError::class, 'Variable is not a float.');
+})->throws(TypeError::class, 'Variable is not a [float].');

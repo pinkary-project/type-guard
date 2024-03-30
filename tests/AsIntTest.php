@@ -14,4 +14,4 @@ test('not integer type', function (): void {
     $variable = 'string';
 
     type($variable)->asInt();
-})->throws(TypeError::class, 'Variable is not an integer.');
+})->throws(TypeError::class, 'Variable is not an [integer].');

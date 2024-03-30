@@ -18,4 +18,4 @@ test('not string type', function (): void {
     $variable = null;
 
     type($variable)->as(User::class);
-})->throws(TypeError::class, 'Variable is not a User.');
+})->throws(TypeError::class, 'Variable is not a [User].');
