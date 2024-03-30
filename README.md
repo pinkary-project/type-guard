@@ -49,10 +49,18 @@ $variable = type($variable)->asInt();
 
 ### `asString()`
 
-Asserts and narrows down the type of the given variable to an string.
+Asserts and narrows down the type of the given variable to a string.
 
 ```php
 $variable = type($variable)->asString();
+```
+
+### `asBool()`
+
+Asserts and narrows down the type of the given variable to a boolean.
+
+```php
+$variable = type($variable)->asBool();
 ```
 
 ------
