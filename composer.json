@@ -1,6 +1,6 @@
 {
     "name": "std-library/type-guard",
-    "description": "Type Guard is a lightweight PHP library that allows you to narrow down the type of an variable to a more specific type.",
+    "description": "Type Guard module is part of the PHP's Standard Library, and allows you to narrow down the type of an variable to a more specific type.",
     "keywords": ["std-library", "type-guard", "assert", "narrow", "type", "php"],
     "license": "MIT",
     "authors": [
