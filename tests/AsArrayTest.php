@@ -1,6 +1,8 @@
 <?php
 
-test('array type', function () {
+declare(strict_types=1);
+
+test('array type', function (): void {
     $variable = [];
 
     $value = type($variable)->asArray();
@@ -8,7 +10,7 @@ test('array type', function () {
     expect($value)->toBeArray();
 });
 
-test('not array type', function () {
+test('not array type', function (): void {
     $variable = 7415541;
 
     type($variable)->asArray();
