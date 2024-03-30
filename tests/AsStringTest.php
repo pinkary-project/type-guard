@@ -1,6 +1,8 @@
 <?php
 
-test('string type', function () {
+declare(strict_types=1);
+
+test('string type', function (): void {
     $variable = 'string';
 
     $value = type($variable)->asString();
@@ -8,8 +10,8 @@ test('string type', function () {
     expect($value)->toBeString();
 });
 
-test('not string type', function () {
+test('not string type', function (): void {
     $variable = 1;
 
-    $value = type($variable)->asString();
+    type($variable)->asString();
 })->throws(TypeError::class, 'Variable is not a string.');

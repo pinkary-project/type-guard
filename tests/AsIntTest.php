@@ -1,6 +1,8 @@
 <?php
 
-test('integer type', function () {
+declare(strict_types=1);
+
+test('integer type', function (): void {
     $variable = 7415541;
 
     $value = type($variable)->asInt();
@@ -8,7 +10,7 @@ test('integer type', function () {
     expect($value)->toBeInt();
 });
 
-test('not integer type', function () {
+test('not integer type', function (): void {
     $variable = 'string';
 
     type($variable)->asInt();
