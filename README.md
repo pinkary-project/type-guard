@@ -26,6 +26,16 @@ $apiKey = config('api_key');
 $apiKey = type($apiKey)->asString();
 ```
 
+Here is another example, where we use the `type` function to narrow down the type of a variable that previously could be `null`:
+
+```php
+/** @var array<int, User>|null $users */
+$users = getUsers();
+
+// Narrows down the type to: array<int, User>
+$users = type($users)->not()->null();
+```
+
 ## Installation
 
 > **Requires [PHP 8.2+](https://php.net/releases/)**
@@ -44,6 +54,7 @@ composer require std-library/type-guard
 - [`asString()`](#asstring)
 - [`asBool()`](#asbool)
 - [`asNull()`](#asnull)
+- [`not()->null()`](#notnull)
 
 ### `as`
 
@@ -91,6 +102,14 @@ Asserts and narrows down the type of the given variable to a null.
 
 ```php
 $variable = type($variable)->asNull();
+```
+
+### `not()->null()`
+
+Asserts and narrows down the type of the given variable to a non-null value.
+
+```php
+$variable = type($variable)->not()->null();
 ```
 
 ------
