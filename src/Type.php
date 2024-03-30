@@ -69,4 +69,33 @@ final readonly class Type
 
         return $this->variable;
     }
+
+    /**
+     * Asserts and narrow down the type to float.
+     *
+     * @phpstan-assert-if-true float $this->variable
+     */
+    public function asFloat(): float
+    {
+        if (! is_float($this->variable)) {
+            throw new TypeError('Variable is not a float.');
+        }
+
+        return $this->variable;
+    }
+
+    /**
+     * Asserts and narrow down the type to boolean.
+     *
+     * @phpstan-assert-if-true bool $this->variable
+     */
+    public function asBool(): bool
+    {
+        if (! is_bool($this->variable)) {
+            throw new TypeError('Variable is not a boolean.');
+        }
+
+        return $this->variable;
+
+    }
 }
