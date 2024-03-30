@@ -71,6 +71,26 @@ final readonly class Type
     }
 
     /**
+     * Asserts and narrow down the type to positive integer.
+     *
+     * @phpstan-assert positive-int $this->variable
+     *
+     * @return (TVariable is positive-int ? TVariable : never)
+     */
+    public function asPositiveInt(): int
+    {
+        if (! is_int($this->variable)) {
+            throw new TypeError('Variable is not an [integer].');
+        }
+
+        if ($this->variable <= 0) {
+            throw new TypeError('Variable is not a [positive integer].');
+        }
+
+        return $this->variable;
+    }
+
+    /**
      * Asserts and narrow down the type to float.
      *
      * @phpstan-assert-if-true float $this->variable
