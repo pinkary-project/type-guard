@@ -58,6 +58,8 @@ final readonly class Type
 
     /**
      * Asserts and narrow down the type to numeric.
+     *
+     * @phpstan-assert-if-true int|float|numeric-string $this->variable
      */
     public function asNumeric(): int|float|string
     {
