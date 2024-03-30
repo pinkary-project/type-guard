@@ -32,8 +32,18 @@ Here is another example, where we use the `type` function to narrow down the typ
 /** @var array<int, User>|null $users */
 $users = getUsers();
 
-// Narrows down the type to: array<int, User>
+// Narrows down the type to `array<int, User>`
 $users = type($users)->not()->null();
+```
+
+And one more example, where narrow down the type of a variable to a Collection, does not lose the type information:
+
+```php
+/** @var Collection<int, User>|null $users */
+$users = getUsers();
+
+// Narrows down the type to `Collection<int, User>`
+$users = type($users)->as(Collection::class);
 ```
 
 ## Installation
