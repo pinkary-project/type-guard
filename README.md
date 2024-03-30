@@ -64,6 +64,7 @@ composer require std-library/type-guard
 - [`asString()`](#asstring)
 - [`asBool()`](#asbool)
 - [`asNull()`](#asnull)
+- [`asCallable()`](#ascallable)
 - [`not()->null()`](#notnull)
 
 ### `as`
@@ -112,6 +113,14 @@ Asserts and narrows down the type of the given variable to a null.
 
 ```php
 $variable = type($variable)->asNull();
+```
+
+### `asCallable()`
+
+Asserts and narrows down the type of the given variable to a callable.
+
+```php
+$variable = type($variable)->asCallable();
 ```
 
 ### `not()->null()`
