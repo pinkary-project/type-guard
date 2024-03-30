@@ -38,6 +38,7 @@ composer require std-library/type-guard
 
 - [`asInt()`](#asint)
 - [`asString()`](#asstring)
+- [`asBool()`](#asbool)
 
 ### `asInt()`
 
