@@ -24,6 +24,25 @@ final readonly class Type
     }
 
     /**
+     * Asserts and narrow down the type to the given type.
+     *
+     * @template TAs of object
+     *
+     * @phpstan-assert-if-true TAs $this->variable
+     *
+     * @param  class-string<TAs>  $type
+     * @return TAs
+     */
+    public function as(string $type): mixed
+    {
+        if (! is_object($this->variable) || ! $this->variable instanceof $type) {
+            throw new TypeError('Variable is not a '.$type.'.');
+        }
+
+        return $this->variable;
+    }
+
+    /**
      * Asserts and narrow down the type to string.
      *
      * @phpstan-assert-if-true string $this->variable
