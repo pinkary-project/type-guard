@@ -12,7 +12,7 @@
 
 > This library is a **work in progress**. Please, do not use it in production.
 
-Type Guard module is part of the [PHP's Standard Library](https:://github.com/std-library), and allows you to narrow down the type of an variable to a more specific type.  Using the `type` function, you can perform specific checks to determine the type of an object and then use that object in a way that is type-safe according to the [PHPStan](https://phpstan.org/) and [Psalm](https://psalm.dev/) static analyzers.
+Type Guard module is part of the [PHP's Standard Library](https:://github.com/std-library), and allows you to **narrow down the type** of an variable to a more specific type.  Using the `type` function, you can perform specific checks to determine the type of an object and then use that object in a way that is **type-safe** according to the [PHPStan](https://phpstan.org/) and [Psalm](https://psalm.dev/) static analyzers.
 
 Here is an example, where we use the `type` function to narrow down the type of a variable that previously had a `mixed` type:
 
@@ -86,4 +86,4 @@ $variable = type($variable)->asBool();
 
 ------
 
-**Type Guard** was created by **[Nuno Maduro](https://twitter.com/enunomaduro)** under the **[MIT license](https://opensource.org/licenses/MIT)**.
+**Type Guard** is part of the [PHP's Standard Library](https:://github.com/std-library) project. It was created by **[Nuno Maduro](https://twitter.com/enunomaduro)** and open-sourced under the **[MIT license](https://opensource.org/licenses/MIT)**.
