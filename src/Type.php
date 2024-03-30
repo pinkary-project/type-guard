@@ -50,4 +50,16 @@ final readonly class Type
 
         return $this->variable;
     }
+
+    /**
+     * Asserts and narrow down the type to boolean.
+     */
+    public function asBool(): bool
+    {
+        if (! is_bool($this->variable)) {
+            throw new TypeError('Variable is not a boolean.');
+        }
+
+        return $this->variable;
+    }
 }
