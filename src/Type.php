@@ -9,7 +9,7 @@ use TypeError;
 /**
  * @internal
  *
- * @template TVariable as mixed
+ * @template TVariable
  */
 final readonly class Type
 {
@@ -25,6 +25,8 @@ final readonly class Type
 
     /**
      * Asserts and narrow down the type to string.
+     *
+     * @phpstan-assert-if-true string $this->variable
      */
     public function asString(): string
     {
@@ -37,6 +39,8 @@ final readonly class Type
 
     /**
      * Asserts and narrow down the type to integer.
+     *
+     * @phpstan-assert-if-true int $this->variable
      */
     public function asInt(): int
     {
