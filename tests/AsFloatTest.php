@@ -1,6 +1,8 @@
 <?php
 
-test('float type', function () {
+declare(strict_types=1);
+
+test('float type', function (): void {
     $variable = 7415.541;
 
     $value = type($variable)->asFloat();
@@ -8,7 +10,7 @@ test('float type', function () {
     expect($value)->toBeFloat();
 });
 
-test('not float type', function () {
+test('not float type', function (): void {
     $variable = 7415541;
 
     type($variable)->asFloat();

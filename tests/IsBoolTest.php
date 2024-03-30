@@ -1,6 +1,8 @@
 <?php
 
-test('boolean type', function () {
+declare(strict_types=1);
+
+test('boolean type', function (): void {
     $variable = true;
 
     $value = type($variable)->asBool();
@@ -8,7 +10,7 @@ test('boolean type', function () {
     expect($value)->toBeBool();
 });
 
-test('not boolean type', function () {
+test('not boolean type', function (): void {
     $variable = 7415541;
 
     type($variable)->asBool();
