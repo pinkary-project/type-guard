@@ -85,7 +85,6 @@ final readonly class Type
     }
 
     /**
-<<<<<<< HEAD
      * Asserts and narrow down the type to boolean.
      *
      * @phpstan-assert-if-true bool $this->variable
@@ -120,9 +119,6 @@ final readonly class Type
      * @phpstan-assert-if-true array $this->variable
      *
      * @return array<mixed>
-=======
-     * Asserts and narrow down the type to array.
->>>>>>> 5ad35d8 (fix typo)
      */
     public function asArray(): array
     {
