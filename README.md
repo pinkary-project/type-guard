@@ -67,6 +67,7 @@ composer require std-library/type-guard
 - [`asCallable()`](#ascallable)
 - [`not()->null()`](#notnull)
 - [`asArray()`](#asarray)
+- [`asResource()`](#asresource)
 
 ### `as`
 
@@ -138,6 +139,14 @@ Asserts and narrows down the type of the given variable to an array.
 
 ```php
 $variable = type($variable)->asArray();
+```
+
+### `asResource()`
+
+Asserts and narrows down the type of the given variable to a resource.
+
+```php
+$variable = type($variable)->asResource();
 ```
 
 ------
