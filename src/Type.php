@@ -26,12 +26,12 @@ final readonly class Type
     /**
      * Asserts and narrow down the type to the given type.
      *
-     * @template TAs of object
+     * @template TAs
      *
      * @phpstan-assert-if-true TAs $this->variable
      *
      * @param  class-string<TAs>  $type
-     * @return TAs
+     * @return (TVariable is TAs ? TVariable : never)
      */
     public function as(string $type): mixed
     {
