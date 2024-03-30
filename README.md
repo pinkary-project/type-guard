@@ -12,15 +12,19 @@
 
 > This library is a **work in progress**. Please, do not use it in production.
 
-Type Guard is a lightweight PHP library that allows you to narrow down the type of an variable to a more specific type. It provides a `type` function to assert and tell the compiler, [PHPStan](https://phpstan.org/), and [Psalm](https://psalm.dev/) the type of a variable. Here is an example:
+Type Guard module is part of the [PHP's Standard Library](https:://github.com/std-library), and allows you to narrow down the type of an variable to a more specific type.
+
+Using the `type` function, you can perform specific checks to determine the type of an object and then use that object in a way that is type-safe according to the [PHPStan](https://phpstan.org/) and [Psalm](https://psalm.dev/) static analyzers.
+
+Here is an example, where we use the `type` function to narrow down the type of a variable that previously had a `mixed` type:
 
 ```php
 function config(): mixed;
 
-// For PHPStan and Psalm, the return type of config is mixed:
+// At compile time, the type of $apiKey is `mixed`:
 $apiKey = config('api_key'); 
 
-// Asserts and narrow down the type of $apiKey to string:
+// We instruct the static analyzer that $apiKey is a `string`:
 $apiKey = type($apiKey)->asString(); 
 ```
 
@@ -36,10 +40,21 @@ composer require std-library/type-guard
 
 ## Usage
 
+- [`as`](#as)
 - [`asInt()`](#asint)
 - [`asFloat()`](#asfloat)
 - [`asString()`](#asstring)
 - [`asBool()`](#asbool)
+
+### `as`
+
+Asserts and narrows down the type of the given variable to a more specific type.
+
+```php
+$variable = type($variable)->as(User::class);
+```
+
+```php
 
 ### `asInt()`
 
