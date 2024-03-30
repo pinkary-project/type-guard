@@ -53,6 +53,8 @@ final readonly class Type
 
     /**
      * Asserts and narrow down the type to boolean.
+     *
+     * @phpstan-assert-if-true bool $this->variable
      */
     public function asBool(): bool
     {
