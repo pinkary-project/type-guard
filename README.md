@@ -43,6 +43,7 @@ composer require std-library/type-guard
 - [`asFloat()`](#asfloat)
 - [`asString()`](#asstring)
 - [`asBool()`](#asbool)
+- [`asNull()`](#asnull)
 
 ### `as`
 
@@ -82,6 +83,14 @@ Asserts and narrows down the type of the given variable to a boolean.
 
 ```php
 $variable = type($variable)->asBool();
+```
+
+### `asNull()`
+
+Asserts and narrows down the type of the given variable to a null.
+
+```php
+$variable = type($variable)->asNull();
 ```
 
 ------

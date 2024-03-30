@@ -98,4 +98,18 @@ final readonly class Type
         return $this->variable;
 
     }
+
+    /**
+     * Asserts and narrow down the type to null.
+     *
+     * @phpstan-assert-if-true null $this->variable
+     */
+    public function asNull(): null
+    {
+        if (! is_null($this->variable)) {
+            throw new TypeError('Variable is not a [null].');
+        }
+
+        return $this->variable;
+    }
 }
