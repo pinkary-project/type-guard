@@ -3,7 +3,7 @@
 test('boolean type', function () {
     $variable = true;
 
-    $value = type($variable)->isBool();
+    $value = type($variable)->asBool();
 
     expect($value)->toBeBool();
 });
@@ -11,5 +11,5 @@ test('boolean type', function () {
 test('not boolean type', function () {
     $variable = 7415541;
 
-    type($variable)->isBool();
+    type($variable)->asBool();
 })->throws(TypeError::class, 'Variable is not a boolean.');
