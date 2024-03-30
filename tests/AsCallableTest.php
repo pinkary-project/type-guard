@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 test('callable type', function (): void {
-    $variable = fn () => null;
+    $variable = fn (): null => null;
 
     $value = type($variable)->asCallable();
 

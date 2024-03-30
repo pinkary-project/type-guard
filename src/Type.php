@@ -116,7 +116,9 @@ final readonly class Type
     /**
      * Asserts and narrow down the type to a callable.
      *
-     * @phpstan-assert-if-true callable $this->variable
+     * @phpstan-assert callable $this->variable
+     *
+     * @return (TVariable is callable ? TVariable : never)
      */
     public function asCallable(): callable
     {
