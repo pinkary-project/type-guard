@@ -112,4 +112,14 @@ final readonly class Type
 
         return $this->variable;
     }
+
+    /**
+     * Creates a not type instance.
+     *
+     * @return Not<TVariable>
+     */
+    public function not(): Not
+    {
+        return new Not($this->variable);
+    }
 }
