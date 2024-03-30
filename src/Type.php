@@ -114,6 +114,22 @@ final readonly class Type
     }
 
     /**
+     * Asserts and narrow down the type to array.
+     *
+     * @phpstan-assert-if-true array $this->variable
+     *
+     * @return array<mixed>
+     */
+    public function asArray(): array
+    {
+        if (! is_array($this->variable)) {
+            throw new TypeError('Variable is not an array.');
+        }
+
+        return $this->variable;
+    }
+
+    /**
      * Asserts and narrow down the type to a callable.
      *
      * @phpstan-assert callable $this->variable
