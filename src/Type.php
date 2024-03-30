@@ -57,6 +57,18 @@ final readonly class Type
     }
 
     /**
+     * Asserts and narrow down the type to numeric.
+     */
+    public function asNumeric(): int|float|string
+    {
+        if (! is_numeric($this->variable)) {
+            throw new TypeError('Variable is not a numeric.');
+        }
+
+        return $this->variable;
+    }
+
+    /**
      * Asserts and narrow down the type to integer.
      *
      * @phpstan-assert-if-true int $this->variable
