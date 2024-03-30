@@ -118,7 +118,7 @@ final readonly class Type
      *
      * @phpstan-assert-if-true array $this->variable
      *
-     * @return array<mixed>
+     * @return (TVariable is array ? TVariable : never)
      */
     public function asArray(): array
     {
