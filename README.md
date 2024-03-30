@@ -37,6 +37,7 @@ composer require std-library/type-guard
 ## Usage
 
 - [`asInt()`](#asint)
+- [`asFloat()`](#asfloat)
 - [`asString()`](#asstring)
 - [`asBool()`](#asbool)
 
@@ -46,6 +47,14 @@ Asserts and narrows down the type of the given variable to an integer.
 
 ```php
 $variable = type($variable)->asInt();
+```
+
+### `asFloat()`
+
+Asserts and narrows down the type of the given variable to a float.
+
+```php
+$variable = type($variable)->asFloat();
 ```
 
 ### `asString()`
