@@ -12,7 +12,7 @@
 
 > This library is a **work in progress**. Please, do not use it in production.
 
-Type Guard is a lightweight PHP library that allows you to narrow down the type of an variable to a more specific type. It provides a `type` function to assert and tell the compiler, [PHPStan](https://phpstan.org/), and [Psalm](https://psalm.dev/) the type of a variable. Here is an example:
+Type Guard is a lightweight PHP library that allows you to narrow down the type of a variable to a more specific type. It provides a `type` function to assert and tells the compiler, [PHPStan](https://phpstan.org/), and [Psalm](https://psalm.dev/) the type of a variable. Here is an example:
 
 ```php
 function config(): mixed;
