@@ -26,7 +26,7 @@ $apiKey = config('api_key');
 $apiKey = type($apiKey)->asString();
 ```
 
-Here is another example, where we use the `type` function to narrow down the type of a variable that previously could be `null`:
+Here is another example, where we use the `type` function to narrow down the type of a variable that previously could be `null`. In the process, zero type information is lost:
 
 ```php
 /** @var array<int, User>|null $users */
