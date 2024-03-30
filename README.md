@@ -54,8 +54,6 @@ Asserts and narrows down the type of the given variable to a more specific type.
 $variable = type($variable)->as(User::class);
 ```
 
-```php
-
 ### `asInt()`
 
 Asserts and narrows down the type of the given variable to an integer.
