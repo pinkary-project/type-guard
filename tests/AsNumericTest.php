@@ -7,7 +7,7 @@ test('numeric type', function ($variable) {
 })->with([
     7415541,
     7415.541,
-    "7415541",
+    '7415541',
     0b01100110,
     0x66,
 ]);
@@ -17,8 +17,8 @@ test('not numeric type', function () {
 
     type($variable)->asNumeric();
 })->with([
-    "",
-    "not numeric",
+    '',
+    'not numeric',
     null,
-    []
+    [],
 ])->throws(TypeError::class, 'Variable is not a numeric.');
