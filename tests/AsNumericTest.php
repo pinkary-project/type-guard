@@ -1,6 +1,8 @@
 <?php
 
-test('numeric type', function ($variable) {
+declare(strict_types=1);
+
+test('numeric type', function ($variable): void {
     $value = type($variable)->asNumeric();
 
     expect($value)->toBeNumeric();
@@ -12,7 +14,7 @@ test('numeric type', function ($variable) {
     0x66,
 ]);
 
-test('not numeric type', function () {
+test('not numeric type', function (): void {
     $variable = 'string';
 
     type($variable)->asNumeric();
