@@ -1,7 +1,7 @@
 {
     "name": "another-library/type-guard",
     "description": "Type Guard module is part of the Another Library, and allows you to narrow down the type of an variable to a more specific type.",
-    "keywords": ["std-library", "type-guard", "assert", "narrow", "type", "php"],
+    "keywords": ["another-library", "type-guard", "assert", "narrow", "type", "php"],
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "StdLibrary\\TypeGuard\\": "src/"
+            "AnotherLibrary\\TypeGuard\\": "src/"
         }
     },
     "autoload-dev": {
