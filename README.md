@@ -36,7 +36,7 @@ $users = getUsers();
 $users = type($users)->not()->null();
 ```
 
-And one more example, where we narrow down the type of a variable to a Collection without loosing the type information:
+And one more example, where we narrow down the type of a variable to a Collection without losing the type information:
 
 ```php
 /** @var Collection<int, User>|null $users */
