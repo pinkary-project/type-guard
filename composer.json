@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "StdLibrary\\TypeGuard\\": "src/"
+            "AnotherLibrary\\TypeGuard\\": "src/"
         }
     },
     "autoload-dev": {
