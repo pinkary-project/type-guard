@@ -1,10 +1,10 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/std-library/type-guard/master/docs/example.jpg" height="300" alt="Skeleton Php">
+    <img src="https://raw.githubusercontent.com/another-library/type-guard/master/docs/example.jpg" height="300" alt="Skeleton Php">
     <p align="center">
-        <a href="https://github.com/std-library/type-guard/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/std-library/type-guard/actions/workflows/tests.yml/badge.svg"></a>
-        <a href="https://packagist.org/packages/std-library/type-guard"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/std-library/type-guard"></a>
-        <a href="https://packagist.org/packages/std-library/type-guard"><img alt="Latest Version" src="https://img.shields.io/packagist/v/std-library/type-guard"></a>
-        <a href="https://packagist.org/packages/std-library/type-guard"><img alt="License" src="https://img.shields.io/packagist/l/std-library/type-guard"></a>
+        <a href="https://github.com/another-library/type-guard/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/another-library/type-guard/actions/workflows/tests.yml/badge.svg"></a>
+        <a href="https://packagist.org/packages/another-library/type-guard"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/another-library/type-guard"></a>
+        <a href="https://packagist.org/packages/another-library/type-guard"><img alt="Latest Version" src="https://img.shields.io/packagist/v/another-library/type-guard"></a>
+        <a href="https://packagist.org/packages/another-library/type-guard"><img alt="License" src="https://img.shields.io/packagist/l/another-library/type-guard"></a>
     </p>
 </p>
 
@@ -53,7 +53,7 @@ $users = type($users)->as(Collection::class);
 You may use [Composer](https://getcomposer.org) to install Type Guard into your PHP project:
 
 ```bash
-composer require std-library/type-guard
+composer require another-library/type-guard
 ```
 
 ## Usage
