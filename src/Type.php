@@ -146,6 +146,22 @@ final readonly class Type
     }
 
     /**
+     * Asserts and narrow down the type to an iterable.
+     *
+     * @phpstan-assert-if-true iterable $this->variable
+     *
+     * @return (TVariable is iterable ? TVariable : never)
+     */
+    public function asIterable(): iterable
+    {
+        if (! is_iterable($this->variable)) {
+            throw new TypeError('Variable is not a [iterable].');
+        }
+
+        return $this->variable;
+    }
+
+    /**
      * Creates a not type instance.
      *
      * @return Not<TVariable>
