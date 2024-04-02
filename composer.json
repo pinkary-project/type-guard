@@ -23,15 +23,15 @@
     "autoload": {
         "psr-4": {
             "StdLibrary\\TypeGuard\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
         },
         "files": [
             "src/Functions.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
