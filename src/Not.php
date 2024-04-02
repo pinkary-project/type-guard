@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace StdLibrary\TypeGuard;
+namespace AnotherLibrary\TypeGuard;
 
 use TypeError;
 

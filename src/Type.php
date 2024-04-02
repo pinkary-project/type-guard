@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace StdLibrary\TypeGuard;
+namespace AnotherLibrary\TypeGuard;
 
 use TypeError;
 
@@ -140,6 +140,22 @@ final readonly class Type
     {
         if (! is_callable($this->variable)) {
             throw new TypeError('Variable is not a [callable].');
+        }
+
+        return $this->variable;
+    }
+
+    /**
+     * Asserts and narrow down the type to an iterable.
+     *
+     * @phpstan-assert-if-true iterable $this->variable
+     *
+     * @return (TVariable is iterable ? TVariable : never)
+     */
+    public function asIterable(): iterable
+    {
+        if (! is_iterable($this->variable)) {
+            throw new TypeError('Variable is not a [iterable].');
         }
 
         return $this->variable;

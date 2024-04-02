@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use StdLibrary\TypeGuard\Type;
+use AnotherLibrary\TypeGuard\Type;
 
 if (! function_exists('type')) {
     /**
