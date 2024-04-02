@@ -67,6 +67,7 @@ composer require another-library/type-guard
 - [`asCallable()`](#ascallable)
 - [`not()->null()`](#notnull)
 - [`asArray()`](#asarray)
+- [`asIterable()`](#asiterable)
 
 ### `as`
 
@@ -139,6 +140,14 @@ Asserts and narrows down the type of the given variable to an array.
 ```php
 $variable = type($variable)->asArray();
 ```
+### `asIterable()`
+
+Asserts and narrows down the type of the given variable to an iterable.
+
+```php
+$variable = type($variable)->asIterable();
+```
+
 
 ------
 
