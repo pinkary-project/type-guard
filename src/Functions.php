@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use AnotherLibrary\TypeGuard\Type;
+use GlossPHP\TypeGuard\Type;
 
 if (! function_exists('type')) {
     /**

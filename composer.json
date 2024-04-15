@@ -1,7 +1,7 @@
 {
-    "name": "another-library/type-guard",
+    "name": "gloss-php/type-guard",
     "description": "Type Guard module is part of the Another Library, and allows you to narrow down the type of an variable to a more specific type.",
-    "keywords": ["another-library", "type-guard", "assert", "narrow", "type", "php"],
+    "keywords": ["gloss-php", "type-guard", "assert", "narrow", "type", "php"],
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AnotherLibrary\\TypeGuard\\": "src/"
+            "GlossPHP\\TypeGuard\\": "src/"
         },
         "files": [
             "src/Functions.php"
