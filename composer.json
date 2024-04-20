@@ -1,7 +1,7 @@
 {
-    "name": "gloss-php/type-guard",
+    "name": "pinkary-project/type-guard",
     "description": "Type Guard module is part of the Gloss PHP, and allows you to narrow down the type of an variable to a more specific type.",
-    "keywords": ["gloss-php", "type-guard", "assert", "narrow", "type", "php"],
+    "keywords": ["pinkary-project", "type-guard", "assert", "narrow", "type", "php"],
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "GlossPHP\\TypeGuard\\": "src/"
+            "PinkaryProject\\TypeGuard\\": "src/"
         },
         "files": [
             "src/Functions.php"

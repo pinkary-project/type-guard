@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GlossPHP\TypeGuard;
+namespace PinkaryProject\TypeGuard;
 
 use TypeError;
 
