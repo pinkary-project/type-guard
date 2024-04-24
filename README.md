@@ -1,10 +1,10 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/gloss-php/type-guard/master/docs/example.jpg" height="300" alt="Skeleton Php">
+    <img src="https://raw.githubusercontent.com/pinkary-project/type-guard/master/docs/example.jpg" height="300" alt="Logo of Pinkary Project">
     <p align="center">
-        <a href="https://github.com/gloss-php/type-guard/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/gloss-php/type-guard/actions/workflows/tests.yml/badge.svg"></a>
-        <a href="https://packagist.org/packages/gloss-php/type-guard"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/gloss-php/type-guard"></a>
-        <a href="https://packagist.org/packages/gloss-php/type-guard"><img alt="Latest Version" src="https://img.shields.io/packagist/v/gloss-php/type-guard"></a>
-        <a href="https://packagist.org/packages/gloss-php/type-guard"><img alt="License" src="https://img.shields.io/packagist/l/gloss-php/type-guard"></a>
+        <a href="https://github.com/pinkary-project/type-guard/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/pinkary-project/type-guard/actions/workflows/tests.yml/badge.svg"></a>
+        <a href="https://packagist.org/packages/pinkary-project/type-guard"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/pinkary-project/type-guard"></a>
+        <a href="https://packagist.org/packages/pinkary-project/type-guard"><img alt="Latest Version" src="https://img.shields.io/packagist/v/pinkary-project/type-guard"></a>
+        <a href="https://packagist.org/packages/pinkary-project/type-guard"><img alt="License" src="https://img.shields.io/packagist/l/pinkary-project/type-guard"></a>
     </p>
 </p>
 
@@ -12,7 +12,7 @@
 
 > This library is a **work in progress**. Please, do not use it in production.
 
-Type Guard module is part of the [Gloss PHP](https://github.com/gloss-php), and allows you to **narrow down the type** of a variable to a more specific type.  Using the `type` function, you can perform specific checks to determine the type of an object and then use that object in a way that is **type-safe** according to the [PHPStan](https://phpstan.org/) and [Psalm](https://psalm.dev/) static analyzers.
+Type Guard module is part of the [Pinkary Project](https://github.com/pinkary-project), and allows you to **narrow down the type** of a variable to a more specific type.  Using the `type` function, you can perform specific checks to determine the type of an object and then use that object in a way that is **type-safe** according to the [PHPStan](https://phpstan.org/) and [Psalm](https://psalm.dev/) static analyzers.
 
 Here is an example, where we use the `type` function to narrow down the type of a variable that previously had a `mixed` type:
 
@@ -53,7 +53,7 @@ $users = type($users)->as(Collection::class);
 You may use [Composer](https://getcomposer.org) to install Type Guard into your PHP project:
 
 ```bash
-composer require gloss-php/type-guard
+composer require pinkary-project/type-guard
 ```
 
 ## Usage
@@ -151,4 +151,4 @@ $variable = type($variable)->asIterable();
 
 ------
 
-**Type Guard** is part of the [Gloss PHP](https://github.com/gloss-php) project. It was created by **[Nuno Maduro](https://twitter.com/enunomaduro)** and open-sourced under the **[MIT license](https://opensource.org/licenses/MIT)**.
+**Type Guard** is part of the [Pinkary Project](https://github.com/pinkary-project) project. It was created by **[Nuno Maduro](https://twitter.com/enunomaduro)** and open-sourced under the **[MIT license](https://opensource.org/licenses/MIT)**.
