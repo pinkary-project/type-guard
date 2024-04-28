@@ -1,5 +1,4 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/pinkary-project/type-guard/master/docs/example.jpg" height="300" alt="Logo of Pinkary Project">
     <p align="center">
         <a href="https://github.com/pinkary-project/type-guard/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/pinkary-project/type-guard/actions/workflows/tests.yml/badge.svg"></a>
         <a href="https://packagist.org/packages/pinkary-project/type-guard"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/pinkary-project/type-guard"></a>
