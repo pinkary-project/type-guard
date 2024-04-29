@@ -43,6 +43,16 @@ final readonly class Type
     }
 
     /**
+     * Create a new TypedArray instance.
+     *
+     * @return TypedArray<TVariable>
+     */
+    public function asArrayOf(): TypedArray
+    {
+        return new TypedArray($this->variable);
+    }
+
+    /**
      * Asserts and narrow down the type to string.
      *
      * @phpstan-assert-if-true string $this->variable
