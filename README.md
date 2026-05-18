@@ -58,6 +58,7 @@ composer require pinkary-project/type-guard
 ## Usage
 
 - [`as`](#as)
+- [`asNumeric()`](#asnumeric)
 - [`asInt()`](#asint)
 - [`asFloat()`](#asfloat)
 - [`asString()`](#asstring)
@@ -74,6 +75,14 @@ Asserts and narrows down the type of the given variable to a more specific type.
 
 ```php
 $variable = type($variable)->as(User::class);
+```
+
+### `asNumeric()`
+
+Asserts and narrows down the type of the given variable to a numeric.
+
+```php
+$variable = type($variable)->asNumeric();
 ```
 
 ### `asInt()`
