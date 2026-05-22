@@ -66,6 +66,7 @@ composer require pinkary-project/type-guard
 - [`asCallable()`](#ascallable)
 - [`not()->null()`](#notnull)
 - [`asArray()`](#asarray)
+- [`asResource()`](#asresource)
 - [`asIterable()`](#asiterable)
 
 ### `as`
@@ -147,6 +148,14 @@ Asserts and narrows down the type of the given variable to an iterable.
 $variable = type($variable)->asIterable();
 ```
 
+
+### `asResource()`
+
+Asserts and narrows down the type of the given variable to a resource.
+
+```php
+$variable = type($variable)->asResource();
+```
 
 ------
 

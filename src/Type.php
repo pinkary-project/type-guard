@@ -130,6 +130,22 @@ final readonly class Type
     }
 
     /**
+     * Asserts and narrow down the type to a resource.
+     *
+     * @phpstan-assert-if-true resource $this->variable
+     *
+     * @return resource
+     */
+    public function asResource(): mixed
+    {
+        if (! is_resource($this->variable)) {
+            throw new TypeError('Variable is not a [resource].');
+        }
+
+        return $this->variable;
+    }
+
+    /**
      * Asserts and narrow down the type to a callable.
      *
      * @phpstan-assert callable $this->variable
