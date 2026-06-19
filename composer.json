@@ -43,7 +43,6 @@
         }
     },
     "scripts": {
-        "refacto": "rector",
         "lint": "pint",
         "refactor": "rector",
         "test:lint": "pint --test",
